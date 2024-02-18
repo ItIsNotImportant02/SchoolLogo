@@ -1,4 +1,4 @@
-#include <Wifi.h>
+#include <WiFi.h>
 
 #include <WS2812FX.h>
 #include <LiquidCrystal.h>
@@ -37,21 +37,6 @@ static void nextMode() {
   ledMode(currentState);
 }
 
-// Function to handle when station gets IP
-void onStationModeGotIP(const WiFiEventStationModeGotIP& event) {
-  Serial.println("Station connected, IP address: ");
-  Serial.println(WiFi.localIP());
-
-  // Redirect to the desired webpage
-  WiFiClient client;
-  if (client.connect(WiFi.gatewayIP(), 80)) {
-    client.print(String("GET / HTTP/1.1\r\n") +
-                 "Host: 192.168.4.1\r\n" +
-                 "Connection: close\r\n\r\n");
-    delay(100);
-  }
-}
-
 void setup() {
   Serial.begin(9600);
   delay(1000);
@@ -75,15 +60,12 @@ void setup() {
   ws2812fx.setMode(FX_MODE_STATIC);
   ws2812fx.start();
 
-  //setPins
+    //setPins
   pinMode(NEXT_BUTTON, INPUT);
   pinMode(WIFI_SWITCH, INPUT);
 
   //setMode1
   ledMode(currentState);
-
-  // Attach the event handler for when station gets IP
-  WiFi.onStationModeGotIP(onStationModeGotIP);
 }
 
 void loop() {
@@ -92,14 +74,14 @@ void loop() {
   ws2812fx.service();
 
   //Mode Button
-  if(digitalRead(NEXT_BUTTON) == HIGH) {
-    if(nextButtonState == LOW) {
-      nextButtonState = HIGH;
-      nextMode();
+    if(digitalRead(NEXT_BUTTON) == HIGH) {
+      if(nextButtonState == LOW) {
+        nextButtonState = HIGH;
+        nextMode();
+      }
+    }else{
+      nextButtonState = LOW;
     }
-  }else{
-    nextButtonState = LOW;
-  }
 
   //Wifi staff
   WiFiClient client = server.available();   // Listen for incoming clients
