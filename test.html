@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <title>SkolaKrizikLogo</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0
+        html {
+            text-align: center;
+            background: rgb(0,28,47);
+            background: linear-gradient(133deg, rgba(0,28,47,1) 0%, rgba(0,20,54,1) 71%
+        button {
+            margin-top: 15px;
+            margin-right: -15px;
+            margin-bottom: 80px;
+            font-size: 45px;
+            padding: 0.6em 2em;
+            border: solid;
+            border-color: darkcyan;
+            outline: none;
+            color: rgb(255, 255, 255);
+            background: #000413;
+            cursor: pointer;
+            z-index: 0;
+            border-radius: 25px;
+            user-select: none;
+            -webkit-user-select: none;
+            touch-action: manipulation;
+            box-shadow: 0 0 16px rgba(123, 251, 255, 0.2), 0 0 16px rgba(0, 255, 255, 0.27);
+        }
+        .buttons {
+            margin-left: 20px;
+        }
+        .button1 {
+            border: solid;
+            border-color: #1f0035;
+            font-size: 65px;
+            margin-top: 200px;
+            text-decoration: none;
+            position: relative;
+            padding: 0.6em 2em;
+            outline: none;
+            color: rgb(255, 255, 255);
+            background: #000413;
+            cursor: pointer;
+            z-index: 0;
+            border-radius: 10px;
+            user-select: none;
+            -webkit-user-select: none;
+            touch-action: manipulation;
+            box-shadow: 0 0 16px rgba(176, 123, 255, 0.2), 0 0 16px rgba(123, 0, 255, 0.27)
+        .nextmode {
+            text-decoration: none
+        {
+            left: 50px ;
+            height: 25px;
+            width: 25px;
+            background-color: #749e83;
+            border-radius: 50%;
+            display: inline-block;
+        }
+        .pred {
+            margin-left: 270px
+        a {
+            text-decoration: none;
+        }
+        .krizik{
+            top: 50px;
+            margin-top: 100px;
+            font-size: 40px;
+            font-weight: 800;
+            font-family: Arial, serif;
+            text-transform: uppercase;
+            background: -webkit-linear-gradient(45deg, #ff8282, #ffbe89, #f7fd9c);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .px {
+            top: 50px;
+            margin-top: 100px;
+            font-size: 80px;
+            font-weight: 800;
+            font-family: Arial, serif;
+            text-transform: uppercase;
+            background: -webkit-linear-gradient(45deg, #b482ff, #9289ff, #9cecfd);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        /* Klíčová fráze pro první animaci (rosvícení) */
+        /* Klíčová fráze pro první animaci (rosvícení) */
+        @keyframes changeColor11 {
+            0% {
+                opacity: 0; /* Všechny tečky jsou zhasnuté */
+            }
+            12.5% {
+                opacity: 1; /* Rozsvícení první tečky */
+            }
+            25% {
+                opacity: 1; /* Rozsvícení druhé tečky */
+            }
+            37.5% {
+                opacity: 1; /* Rozsvícení třetí tečky */
+            }
+            50% {
+                opacity: 1; /* Rozsvícení čtvrté tečky */
+            }
+                62.5% {
+                opacity: 1; /* Rozsvícení páté tečky */
+            }
+            75% {
+                opacity: 1; /* Rozsvícení šesté tečky */
+            }
+            100% {
+                opacity: 1; /* Rozsvícení sedmé a osmé tečky */
+
+        /* Klíčová fráze pro druhou animaci (zhasínání) */
+        @keyframes changeColor12 {
+            0% {
+                opacity: 1; /* Všechny tečky jsou rozsvícené */
+            }
+            12.5% {
+                opacity: 1; /* Postupné zhasínání první tečky */
+            }
+            25% {
+                opacity: 1; /* Postupné zhasínání druhé tečky */
+            }
+            37.5% {
+                opacity: 1; /* Postupné zhasínání třetí tečky */
+            }
+            50% {
+                opacity: 1; /* Postupné zhasínání čtvrté tečky */
+            }
+            62.5% {
+                opacity: 1; /* Postupné zhasínání páté tečky */
+            }
+            75% {
+                opacity: 1; /* Postupné zhasínání šesté tečky */
+            }
+            100% {
+                opacity: 0; /* Zhasnutí všech teček */
+
+        /* Nastavení pro všechny tečky */
+        .dot11, .dot12, .dot13, .dot14, .dot15, .dot16, .dot17, .dot18 {
+            left: 50px;
+            height: 25px;
+            width: 25px;
+            background-color: #ff0000;
+            border-radius: 50%;
+            display: inline-block;
+            transition: opacity 0.5s;
+            opacity: 0; /* Výchozí stav - všechny tečky jsou zhasnuté *
+        /* Nastavení zpoždění pro jednotlivé tečky pro obě animace */
+        .dot11 { animation: changeColor11 32s, changeColor12 32s ; animation-delay: 0s; }
+        .dot12 { animation: changeColor11 32s, changeColor12 32s ; animation-delay: 4s; }
+        .dot13 { animation: changeColor11 32s, changeColor12 32s ; animation-delay: 8s; }
+        .dot14 { animation: changeColor11 32s, changeColor12 32s ; animation-delay: 12s; }
+        .dot15 { animation: changeColor11 32s, changeColor12 32s ; animation-delay: 16s; }
+        .dot16 { animation: changeColor11 32s, changeColor12 32s ; animation-delay: 20s; }
+        .dot17 { animation: changeColor11 32s, changeColor12 32s ; animation-delay: 24s; }
+        .dot18 { animation: changeColor11 32s, changeColor12 32s ; animation-delay: 28s
+    </style>
+</head>
+<bod
+<div class="logo">
+    <p class="krizik">VOŠ a SPŠE Františka Křižíka</p>
+    <p class="px">Zde můžete upravovat módy vašeho modelu<
+</div>
+<div>
+    <a class="nextmode" href=\"/?nextmode">
+        <button class="button1" type="button" name="nextmode">
+            Další mód
+        </button>
+    </a>
+</di
+<div class="abcd">
+    <div class="centered">
+        <div class="buttons">
+            <br><br>
+            <a href=\"/?prog1">
+                <button type="button" name="prog1">
+                    Mód č. 1
+                </button>
+            </a>
+            <span class="dot2"></span>
+            <span class="dot3"></span>
+            <span class="dot4"></span>
+            <span class="dot5"></span>
+            <span class="dot6"></span>
+            <span class="dot7"></span>
+            <span class="dot8"></span>
+            <span class="dot9"></span>
+            <br><br>
+            <a href=\"/?prog2">
+                <button type="button" name="prog2">
+                    Mód č.2
+                </button>
+            </a> <span class="pred"></span>
+            <span class="pred"></span>
+            <span class="dot11"></span>
+            <span class="dot12"></span>
+            <span class="dot13"></span>
+            <span class="dot14"></span>
+            <span class="dot15"></span>
+            <span class="dot16"></span>
+            <span class="dot17"></span>
+            <span class="dot18"></span>
+            <br><br>
+            <a href=\"/?prog3">
+                <button type="button" name="prog3">
+                    Mód č.3
+                </button>
+            </a> <span class="pred"></span>
+            <span class="dot2"></span>
+            <span class="dot3"></span>
+            <span class="dot4"></span>
+            <span class="dot5"></span>
+            <span class="dot6"></span>
+            <span class="dot7"></span>
+            <span class="dot8"></span>
+            <span class="dot9"></span>
+            <br><br>
+            <a href=\"/?prog4">
+                <button type="button" name="prog4">
+                    Mód č.4
+                </button>
+            </a> <span class="pred"></span>
+            <span class="dot2"></span>
+            <span class="dot3"></span>
+            <span class="dot4"></span>
+            <span class="dot5"></span>
+            <span class="dot6"></span>
+            <span class="dot7"></span>
+            <span class="dot8"></span>
+            <span class="dot9"></span>
+            <br><br>
+            <a href=\"/?prog5">
+                <button type="button" name="prog5">
+                    Mód č.5
+                </button>
+            </a><span class="pred"></span>
+            <span class="dot2"></span>
+            <span class="dot3"></span>
+            <span class="dot4"></span>
+            <span class="dot5"></span>
+            <span class="dot6"></span>
+            <span class="dot7"></span>
+            <span class="dot8"></span>
+            <span class="dot9"></span>
+            <br><br>
+            <a href=\"/?prog6">
+                <button type="button" name="prog6">
+                    Mód č.6
+                </button>
+            </a><span class="pred"></span>
+            <span class="dot2"></span>
+            <span class="dot3"></span>
+            <span class="dot4"></span>
+            <span class="dot5"></span>
+            <span class="dot6"></span>
+            <span class="dot7"></span>
+            <span class="dot8"></span>
+            <span class="dot9"></span>
+            <br><br>
+            <a href=\"/?prog7">
+                <button type="button" name="prog7">
+                    Mód č.7
+                </button>
+            </a><span class="pred"></span>
+            <span class="dot2"></span>
+            <span class="dot3"></span>
+            <span class="dot4"></span>
+            <span class="dot5"></span>
+            <span class="dot6"></span>
+            <span class="dot7"></span>
+            <span class="dot8"></span>
+            <span class="dot9"></span>
+            <br><br>
+            <a href=\"/?prog8">
+                <button type="button" name="prog8">
+                    Mód č.8
+                </button>
+            </a><span class="pred"></span>
+            <span class="dot2"></span>
+            <span class="dot3"></span>
+            <span class="dot4"></span>
+            <span class="dot5"></span>
+            <span class="dot6"></span>
+            <span class="dot7"></span>
+            <span class="dot8"></span>
+            <span class="dot9"></span>
+            <br><br>
+            <a href=\"/?prog9">
+                <button type="button" name="prog9">
+                    Mód č.9
+                </button>
+            </a><span class="pred"></span>
+            <span class="dot2"></span>
+            <span class="dot3"></span>
+            <span class="dot4"></span>
+            <span class="dot5"></span>
+            <span class="dot6"></span>
+            <span class="dot7"></span>
+            <span class="dot8"></span>
+            <span class="dot9"></span>
+            <br><br>
+            <a href=\"/?prog10">
+                <button type="button" name="prog10">
+                    Mód č.10
+                </button>
+            </a><span class="pred"></span>
+            <span class="dot2"></span>
+            <span class="dot3"></span>
+            <span class="dot4"></span>
+            <span class="dot5"></span>
+            <span class="dot6"></span>
+            <span class="dot7"></span>
+            <span class="dot8"></span>
+            <span class="dot9"></span>
+            <br><br>
+            <a href=\"/?prog11">
+                <button type="button" name="prog11">
+                    Mód č.11
+                </button>
+            </a><span class="pred"></span>
+            <span class="dot2"></span>
+            <span class="dot3"></span>
+            <span class="dot4"></span>
+            <span class="dot5"></span>
+            <span class="dot6"></span>
+            <span class="dot7"></span>
+            <span class="dot8"></span>
+            <span class="dot9"></span>
+            <br><br>
+            <a href=\"/?prog12">
+                <button type="button" name="prog12">
+                    Mód č.12
+                </button>
+            </a>
+            <span class="pred"></span>
+            <span class="dot2"></span>
+            <span class="dot3"></span>
+            <span class="dot4"></span>
+            <span class="dot5"></span>
+            <span class="dot6"></span>
+            <span class="dot7"></span>
+            <span class="dot8"></span>
+            <span class="dot9"></span>
+            <br><br>
+            <a href=\"/?prog13">
+                <button type="button" name="prog13">
+                    Mód č.13
+                </button>
+            </a><span class="pred"></span>
+            <span class="dot2"></span>
+            <span class="dot3"></span>
+            <span class="dot4"></span>
+            <span class="dot5"></span>
+            <span class="dot6"></span>
+            <span class="dot7"></span>
+            <span class="dot8"></span>
+            <span class="dot9"></span>
+            <br><br>
+            <a href=\"/?prog14">
+                <button type="button" name="prog14">
+                    Mód č.14
+                </button>
+            </a><span class="pred"></span>
+            <span class="dot2"></span>
+            <span class="dot4"></span>
+            <span class="dot3"></span>
+            <span class="dot5"></span>
+            <span class="dot6"></span>
+            <span class="dot7"></span>
+            <span class="dot8"></span>
+            <span class="dot9"></span>
+        </div>
+    </div>
+</div>
+</body>
+</html>
