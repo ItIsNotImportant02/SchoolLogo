@@ -8,19 +8,7 @@ html {
     background: rgb(0,28,47);
     background: linear-gradient(133deg, rgba(0,28,47,1) 0%, rgba(0,20,54,1) 71%);}
 
-.logo {
-    top: 50px;
-    margin-top: 100px;
-    font-size: 80px;
-    font-weight: 800;
-    font-family: Arial, serif;
-    text-transform: uppercase;
-}
-p {
-    background: -webkit-linear-gradient(45deg, #b482ff, #9289ff, #9cecfd);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
+
 
 button {
     margin-top: 140px;
@@ -45,12 +33,13 @@ button {
     margin-left: 20px;
 }
 .button1 {
+    border: solid;
+    border-color: #1f0035;
     font-size: 65px;
     margin-top: 200px;
     text-decoration: none;
     position: relative;
     padding: 0.6em 2em;
-    border: none;
     outline: none;
     color: rgb(255, 255, 255);
     background: #000413;
@@ -60,6 +49,7 @@ button {
     user-select: none;
     -webkit-user-select: none;
     touch-action: manipulation;
+    box-shadow: 0 0 16px rgba(176, 123, 255, 0.2), 0 0 16px rgba(123, 0, 255, 0.27);
 }
 
 .nextmode {
@@ -75,7 +65,7 @@ button {
     display: inline-block;
 }
 .pred {
-    margin-left: 300px;
+    margin-left: 270px;
 }
 
 .dot2{
@@ -143,4 +133,29 @@ button {
     border-radius: 50%;
     display: inline-block;
     margin-right: 40px;
+}
+a {
+    text-decoration: none;
+}
+.krizik{
+    top: 50px;
+    margin-top: 100px;
+    font-size: 40px;
+    font-weight: 800;
+    font-family: Arial, serif;
+    text-transform: uppercase;
+    background: -webkit-linear-gradient(45deg, #ff8282, #ffbe89, #f7fd9c);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.px {
+    top: 50px;
+    margin-top: 100px;
+    font-size: 80px;
+    font-weight: 800;
+    font-family: Arial, serif;
+    text-transform: uppercase;
+    background: -webkit-linear-gradient(45deg, #b482ff, #9289ff, #9cecfd);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
