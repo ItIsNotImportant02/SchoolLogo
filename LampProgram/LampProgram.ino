@@ -108,7 +108,7 @@ void loop() {
     client.println("        <title>Title</title>");
     client.println("    </head>");
     client.println("    <body>");
-    client.println("        <h1> Logo školy elektrotechnické Františka Křižíka</h1>");
+    client.println("        <h1> Logo školy Elektrotechnické Františka Křižíka</h1>");
     client.println("        <p>Zde můžete upravovat módy vašeho modelu</p>");
     client.println("        <a href=\"/?nextmode\">");
     client.println("            <button type=\"button\" name=\"myButton\">");
