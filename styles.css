@@ -5,17 +5,18 @@
 
 html {
     text-align: center;
+      left: 50px;
     background: rgb(0,28,47);
-    background: linear-gradient(133deg, rgba(0,28,47,1) 0%, rgba(0,20,54,1) 71%);}
-
-
+    background: linear-gradient(133deg, rgba(0,28,47,1) 0%, rgba(0,20,54,1) 71%);
+}
 
 button {
+    position: relative;
+    left: 0;
     margin-top: 15px;
-    margin-right: -15px;
-    margin-bottom: 80px;
+    margin-bottom: 65px;
     font-size: 45px;
-    padding: 0.6em 2em;
+    padding: 0.6em 1.45em;
     border: solid;
     border-color: darkcyan;
     outline: none;
@@ -28,10 +29,9 @@ button {
     -webkit-user-select: none;
     touch-action: manipulation;
     box-shadow: 0 0 16px rgba(123, 251, 255, 0.2), 0 0 16px rgba(0, 255, 255, 0.27);
+    display: inline-block; /* Přidáno pro srovnání vedle sebe */
 }
-.buttons {
-    margin-left: 20px;
-}
+
 .button1 {
     border: solid;
     border-color: #1f0035;
@@ -50,28 +50,21 @@ button {
     -webkit-user-select: none;
     touch-action: manipulation;
     box-shadow: 0 0 16px rgba(176, 123, 255, 0.2), 0 0 16px rgba(123, 0, 255, 0.27);
+    display: inline-block; /* Přidáno pro srovnání vedle sebe */
 }
 
 .nextmode {
     text-decoration: none;
 }
-
- {
-    left: 50px ;
-    height: 25px;
-    width: 25px;
-    background-color: #749e83;
-    border-radius: 50%;
-    display: inline-block;
-}
 .pred {
-    margin-left: 270px;
+    margin-left: 50px;
 }
 
 a {
     text-decoration: none;
 }
-.krizik{
+
+.krizik {
     top: 50px;
     margin-top: 100px;
     font-size: 40px;
@@ -82,6 +75,7 @@ a {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
 .px {
     top: 50px;
     margin-top: 100px;
@@ -93,81 +87,31 @@ a {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-/* Klíčová fráze pro první animaci (rosvícení) */
-/* Klíčová fráze pro první animaci (rosvícení) */
-@keyframes changeColor11 {
-    0% {
-        opacity: 0; /* Všechny tečky jsou zhasnuté */
-    }
-    12.5% {
-        opacity: 1; /* Rozsvícení první tečky */
-    }
-    25% {
-        opacity: 1; /* Rozsvícení druhé tečky */
-    }
-    37.5% {
-        opacity: 1; /* Rozsvícení třetí tečky */
-    }
-    50% {
-        opacity: 1; /* Rozsvícení čtvrté tečky */
-    }
-    62.5% {
-        opacity: 1; /* Rozsvícení páté tečky */
-    }
-    75% {
-        opacity: 1; /* Rozsvícení šesté tečky */
-    }
-    100% {
-        opacity: 1; /* Rozsvícení sedmé a osmé tečky */
-    }
-}
 
-/* Klíčová fráze pro druhou animaci (zhasínání) */
-@keyframes changeColor12 {
-    0% {
-        opacity: 1; /* Všechny tečky jsou rozsvícené */
-    }
-    12.5% {
-        opacity: 1; /* Postupné zhasínání první tečky */
-    }
-    25% {
-        opacity: 1; /* Postupné zhasínání druhé tečky */
-    }
-    37.5% {
-        opacity: 1; /* Postupné zhasínání třetí tečky */
-    }
-    50% {
-        opacity: 1; /* Postupné zhasínání čtvrté tečky */
-    }
-    62.5% {
-        opacity: 1; /* Postupné zhasínání páté tečky */
-    }
-    75% {
-        opacity: 1; /* Postupné zhasínání šesté tečky */
-    }
-    100% {
-        opacity: 0; /* Zhasnutí všech teček */
-    }
-}
-
-/* Nastavení pro všechny tečky */
-.dot11, .dot12, .dot13, .dot14, .dot15, .dot16, .dot17, .dot18 {
-    left: 50px;
-    height: 25px;
-    width: 25px;
-    background-color: #ff0000;
-    border-radius: 50%;
+.side {
+    text-align: right;
+    padding: 10px 10px 10px 10px;
     display: inline-block;
-    transition: opacity 0.5s;
-    opacity: 0; /* Výchozí stav - všechny tečky jsou zhasnuté */
-}
+    color: #9289ff;
+    margin-left: 60px;
+    text-decoration: none;
+    font-size: 50px;
+    outline: solid;
+    margin-top: 34px;
 
-/* Nastavení zpoždění pro jednotlivé tečky pro obě animace */
-.dot11 { animation: changeColor11 32s, changeColor12 32s ; animation-delay: 0s; }
-.dot12 { animation: changeColor11 32s, changeColor12 32s ; animation-delay: 4s; }
-.dot13 { animation: changeColor11 32s, changeColor12 32s ; animation-delay: 8s; }
-.dot14 { animation: changeColor11 32s, changeColor12 32s ; animation-delay: 12s; }
-.dot15 { animation: changeColor11 32s, changeColor12 32s ; animation-delay: 16s; }
-.dot16 { animation: changeColor11 32s, changeColor12 32s ; animation-delay: 20s; }
-.dot17 { animation: changeColor11 32s, changeColor12 32s ; animation-delay: 24s; }
-.dot18 { animation: changeColor11 32s, changeColor12 32s ; animation-delay: 28s; }
+}
+.buttons {
+    text-align: left;
+    margin-left: 75px;
+}
+.side1 {
+    text-align: right;
+    padding: 10px 10px 10px 10px;
+    display: inline-block;
+    color: #9289ff;
+    margin-left: 75px;
+    text-decoration: none;
+    font-size: 50px;
+    outline: solid;
+    margin-top: 34px;
+}
