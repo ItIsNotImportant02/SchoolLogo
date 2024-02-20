@@ -5,41 +5,45 @@
 
 html {
     text-align: center;
-}
+    background: rgb(0,28,47);
+    background: linear-gradient(133deg, rgba(0,28,47,1) 0%, rgba(0,20,54,1) 71%);}
 
 .logo {
     top: 50px;
     margin-top: 100px;
     font-size: 80px;
     font-weight: 800;
-    color: black;
-    cursor: pointer;
-    font-family: LogoFont, serif;
+    font-family: Arial, serif;
     text-transform: uppercase;
 }
-
-.px {
-    margin-bottom: 30px;
+p {
+    background: -webkit-linear-gradient(45deg, #b482ff, #9289ff, #9cecfd);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 button {
-    margin-top: 180px;
+    margin-top: 140px;
     margin-right: -15px;
-    margin-bottom: 100px;
+    margin-bottom: 85px;
     font-size: 45px;
     padding: 0.6em 2em;
-    border: none;
+    border: solid;
+    border-color: darkcyan;
     outline: none;
     color: rgb(255, 255, 255);
-    background: #111;
+    background: #000413;
     cursor: pointer;
     z-index: 0;
     border-radius: 25px;
     user-select: none;
     -webkit-user-select: none;
     touch-action: manipulation;
+    box-shadow: 0 0 16px rgba(123, 251, 255, 0.2), 0 0 16px rgba(0, 255, 255, 0.27);
 }
-
+.buttons {
+    margin-left: 20px;
+}
 .button1 {
     font-size: 65px;
     margin-top: 200px;
@@ -49,7 +53,7 @@ button {
     border: none;
     outline: none;
     color: rgb(255, 255, 255);
-    background: #111;
+    background: #000413;
     cursor: pointer;
     z-index: 0;
     border-radius: 10px;
@@ -71,14 +75,14 @@ button {
     display: inline-block;
 }
 .pred {
-    margin-left: 350px;
+    margin-left: 300px;
 }
 
 .dot2{
     left: 50px ;
     height: 25px;
     width: 25px;
-    background-color: #bbb;
+    background-color: #ff0000;
     border-radius: 50%;
     display: inline-block;
 }
@@ -129,5 +133,14 @@ button {
     background-color: #ff1a1a;
     border-radius: 50%;
     display: inline-block;
-    margin-right: 20px;
+}
+
+.dot9 {
+    left: 50px ;
+    height: 25px;
+    width: 25px;
+    background-color: #ffca1a;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 40px;
 }
