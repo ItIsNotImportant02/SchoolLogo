@@ -5,7 +5,6 @@
 
 html {
     text-align: center;
-      left: 50px;
     background: rgb(0,28,47);
     background: linear-gradient(133deg, rgba(0,28,47,1) 0%, rgba(0,20,54,1) 71%);
 }
@@ -89,18 +88,6 @@ button {
     font-size: 50px;
     outline: solid;
     margin-top: 34px;
-}
-.text2 {
-    text-align: right;
-    padding: 10px 10px 10px 10px;
-    display: inline-block;
-    color: #9289ff;
-    margin-left: 60px;
-    text-decoration: none;
-    font-size: 50px;
-    outline: solid;
-    margin-top: 34px;
-
 }
 .buttons {
     text-align: left;
