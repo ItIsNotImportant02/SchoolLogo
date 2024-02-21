@@ -29,14 +29,14 @@ button {
     -webkit-user-select: none;
     touch-action: manipulation;
     box-shadow: 0 0 16px rgba(123, 251, 255, 0.2), 0 0 16px rgba(0, 255, 255, 0.27);
-    display: inline-block; /* Přidáno pro srovnání vedle sebe */
+    display: inline-block;
 }
 
-.button1 {
+.nextbutton {
     border: solid;
     border-color: #1f0035;
     font-size: 65px;
-    margin-top: 200px;
+    margin-top: 100px;
     text-decoration: none;
     position: relative;
     padding: 0.6em 2em;
@@ -50,17 +50,10 @@ button {
     -webkit-user-select: none;
     touch-action: manipulation;
     box-shadow: 0 0 16px rgba(176, 123, 255, 0.2), 0 0 16px rgba(123, 0, 255, 0.27);
-    display: inline-block; /* Přidáno pro srovnání vedle sebe */
+    display: inline-block;
 }
 
-.nextmode {
-    text-decoration: none;
-}
-.pred {
-    margin-left: 50px;
-}
-
-a {
+.nextmode, a {
     text-decoration: none;
 }
 
@@ -75,8 +68,7 @@ a {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-
-.px {
+.text {
     top: 50px;
     margin-top: 100px;
     font-size: 80px;
@@ -87,8 +79,18 @@ a {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-
-.side {
+.text1 {
+    text-align: right;
+    padding: 10px 10px 10px 10px;
+    display: inline-block;
+    color: #9289ff;
+    margin-left: 75px;
+    text-decoration: none;
+    font-size: 50px;
+    outline: solid;
+    margin-top: 34px;
+}
+.text2 {
     text-align: right;
     padding: 10px 10px 10px 10px;
     display: inline-block;
@@ -105,14 +107,5 @@ a {
     margin-left: 75px;
 }
 
-.side1 {
-    text-align: right;
-    padding: 10px 10px 10px 10px;
-    display: inline-block;
-    color: #9289ff;
-    margin-left: 75px;
-    text-decoration: none;
-    font-size: 50px;
-    outline: solid;
-    margin-top: 34px;
-}
+
+
