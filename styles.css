@@ -16,7 +16,7 @@ button {
     margin-bottom: 65px;
     font-size: 45px;
     padding: 0.6em 1.45em;
-    border: solid;
+    border-style: solid;
     border-color: darkcyan;
     outline: none;
     color: rgb(255, 255, 255);
@@ -32,7 +32,7 @@ button {
 }
 
 .nextbutton {
-    border: solid;
+    border-style: solid;
     border-color: #1f0035;
     font-size: 65px;
     margin-top: 100px;
@@ -93,6 +93,3 @@ button {
     text-align: left;
     margin-left: 75px;
 }
-
-
-
